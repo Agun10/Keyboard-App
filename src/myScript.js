@@ -55,6 +55,11 @@ function handleSpace() {
 	state.previousValue = document.getElementById("keyboard-display").value; 
 }
 
+function handleClearAll() {
+	document.getElementById("keyboard-display").value = ' ';
+	state.previousValue = ' '; 
+}
+
 Array.prototype.slice.call(document.getElementsByClassName("letter")).map(eachKey => 
     eachKey.addEventListener("click", handleLetterKey));
     
@@ -66,3 +71,4 @@ Array.prototype.slice.call(document.getElementsByClassName("number")).map(eachKe
 
 document.getElementById("space-bar").addEventListener("click", handleSpace);
 
+document.getElementById("clear-all").addEventListener("click", handleClearAll); 
