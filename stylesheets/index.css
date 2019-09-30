@@ -183,3 +183,8 @@ button.character:hover, button.letter:hover, button.number:hover {
 	background-color: #000000;
 	color: white; 
 }
+
+#space-bar.active, #back-space.active, #clear-all.active, #shift.active {
+	background-color: #000000;
+	color: white; 
+}
