@@ -60,6 +60,14 @@ function handleClearAll() {
 	state.previousValue = ' '; 
 }
 
+function handleBackSpace() {
+	var string = state.previousValue.toString();
+	var length = string.length - 1; 
+	var substring = string.substring(0,length);
+	document.getElementById("keyboard-display").value = substring; 
+	state.previousValue = document.getElementById("keyboard-display").value; 
+}
+
 Array.prototype.slice.call(document.getElementsByClassName("letter")).map(eachKey => 
     eachKey.addEventListener("click", handleLetterKey));
     
@@ -72,3 +80,5 @@ Array.prototype.slice.call(document.getElementsByClassName("number")).map(eachKe
 document.getElementById("space-bar").addEventListener("click", handleSpace);
 
 document.getElementById("clear-all").addEventListener("click", handleClearAll); 
+
+document.getElementById("back-space").addEventListener("click", handleBackSpace);
