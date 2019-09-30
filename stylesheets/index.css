@@ -140,3 +140,15 @@ button.letter {
 	font-weight: bold; 
 	background-color: #e6e6e6; 
 }
+
+button.character {
+	color: black;
+	text-align: center;
+	padding-top: 5% 5%;  
+	margin: -3px 2.5px;  
+	border-radius: 80%;
+	font-size: 20px;
+	font-weight: bold; 
+	background-color: #e6e6e6; 
+	border: 2px solid black;
+}
