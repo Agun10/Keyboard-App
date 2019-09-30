@@ -169,3 +169,12 @@ button.character:hover, button.letter:hover, button.number:hover {
 	background-color: #000000;
 	color: white; 
 }
+
+#space-bar, #back-space, #clear-all, #shift {
+	border: 2px solid black;
+	background-color: #e6e6e6;
+	padding-top: 2% 2%; 
+	border-radius: 10%; 
+	font-size: 25px; 
+	margin-right: 4px; 
+}
