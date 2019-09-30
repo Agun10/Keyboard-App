@@ -178,3 +178,8 @@ button.character:hover, button.letter:hover, button.number:hover {
 	font-size: 25px; 
 	margin-right: 4px; 
 }
+
+#space-bar:hover, #back-space:hover, #clear-all:hover, #shift:hover {
+	background-color: #000000;
+	color: white; 
+}
