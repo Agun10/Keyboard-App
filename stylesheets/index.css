@@ -128,3 +128,15 @@ header {
 	background-color: #000000; 
 	border: 2px solid black; 
 }
+
+button.letter {
+	color: black;
+	text-align: center;
+	padding-top: 2%;  
+	margin: 2px 5px;  
+	border-radius: 10%;
+	border: 2px solid black;
+	font-size: 22px;
+	font-weight: bold; 
+	background-color: #e6e6e6; 
+}
