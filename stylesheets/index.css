@@ -115,3 +115,16 @@ header {
 	padding: 0.5px; 
 	margin-top: 5px; 
 }
+
+#keyboard-display {
+	padding: 1%;
+	color: white;
+	font-size: 15px; 
+	font-weight: bold;  
+	text-align: left; 
+	border-radius: 80%; 
+	margin-top: 20px; 
+	width: 30%; 
+	background-color: #000000; 
+	border: 2px solid black; 
+}
