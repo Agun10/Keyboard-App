@@ -2,7 +2,31 @@ const state = {
 	previousValue: ''
 };
 
+var shiftKey = false; 
+
 var buttons = document.querySelectorAll("#space-bar, #back-space, #clear-all, #shift");
+
+//Add Active class to shiftKey when clicked 
+document.getElementById("shift").addEventListener('click', function(event) {
+	shiftKey = !shiftKey;
+	shiftKey ? event.target.classList.add('active') : event.target.classList.remove('active');
+});
+
+function handleNumberKey(key) {
+	var string = key.target.textContent.toString();
+	var array = string.split(' ');  
+	
+	if(shiftKey == true){
+		var character = array[1].toString();
+		document.getElementById("keyboard-display").value = state.previousValue.toString() + character;
+		state.previousValue = document.getElementById("keyboard-display").value;  
+	}
+	else {
+		var character = array[0].toString();
+		document.getElementById("keyboard-display").value = state.previousValue.toString() + character;
+		state.previousValue = document.getElementById("keyboard-display").value; 
+	}
+}
 
 //Add Active class to the current function clicked 
 for(var eachButton =0; eachButton < buttons.length; eachButton++){
