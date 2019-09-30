@@ -188,3 +188,14 @@ button.character:hover, button.letter:hover, button.number:hover {
 	background-color: #000000;
 	color: white; 
 }
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	margin-left: 650px; 
+	float: left;
+	margin-top: 20px; 
+}
