@@ -1,0 +1,19 @@
+{
+  "name": "keyboard-app",
+  "version": "1.0.0",
+  "description": "internal project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Srilekhini/Keyboard-App.git"
+  },
+  "author": "Srilekhini Kadari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Srilekhini/Keyboard-App/issues"
+  },
+  "homepage": "https://github.com/Srilekhini/Keyboard-App#readme"
+}
