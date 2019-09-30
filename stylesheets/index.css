@@ -15,3 +15,9 @@
 	Media query
 
 ---------------------------*/
+
+body {
+	height: auto; 
+	max-width: 500%; 
+	background-color: white; 
+}
