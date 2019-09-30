@@ -50,6 +50,11 @@ function handleNumberKey(key) {
 	}
 }
 
+function handleSpace() {
+	document.getElementById("keyboard-display").value = state.previousValue.toString() + ' ';
+	state.previousValue = document.getElementById("keyboard-display").value; 
+}
+
 Array.prototype.slice.call(document.getElementsByClassName("letter")).map(eachKey => 
     eachKey.addEventListener("click", handleLetterKey));
     
@@ -58,4 +63,6 @@ Array.prototype.slice.call(document.getElementsByClassName("character")).map(eac
 
 Array.prototype.slice.call(document.getElementsByClassName("number")).map(eachKey => 
     eachKey.addEventListener("click", handleNumberKey));
+
+document.getElementById("space-bar").addEventListener("click", handleSpace);
 
