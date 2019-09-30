@@ -164,3 +164,8 @@ button.number {
 	font-weight: bold; 
 	background-color: #e6e6e6; 
 }
+
+button.character:hover, button.letter:hover, button.number:hover {
+	background-color: #000000;
+	color: white; 
+}
