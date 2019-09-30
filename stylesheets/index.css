@@ -95,3 +95,23 @@ header {
 	font-size: 20%; 
 	padding: 10px;  
 }
+
+.functions-keyset {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	margin-left: 470px; 
+	float: left;
+}
+
+.functions {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px; 
+	padding: 0.5px; 
+	margin-top: 5px; 
+}
