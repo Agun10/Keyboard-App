@@ -152,3 +152,15 @@ button.character {
 	background-color: #e6e6e6; 
 	border: 2px solid black;
 }
+
+button.number {
+	color: black;
+	text-align: center;
+	padding-top: 2% 2%;  
+	margin: 2px 3px;  
+	border-radius: 30%;
+	border: 2px solid black;
+	font-size: 22px;
+	font-weight: bold; 
+	background-color: #e6e6e6; 
+}
