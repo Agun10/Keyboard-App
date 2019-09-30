@@ -2,6 +2,22 @@ const state = {
 	previousValue: ''
 };
 
+var buttons = document.querySelectorAll("#space-bar, #back-space, #clear-all, #shift");
+
+//Add Active class to the current function clicked 
+for(var eachButton =0; eachButton < buttons.length; eachButton++){
+	buttons[eachButton].addEventListener("click", function(event) {
+		var currentSelectedButton = document.getElementsByClassName("active");
+
+		if(currentSelectedButton.length > 0){
+			currentSelectedButton[0].classList.remove('active');
+		}
+		else {
+			event.target.classList.add("active"); 
+		}
+	});
+}
+
 function handleLetterKey(key) {
 	var string = key.target.textContent.toString();
 	var array = string.split(' ');  
